@@ -4,7 +4,7 @@
 >
 > 此服務僅限 [2024 法律 x 法遵科技黑客松](https://hackathon.lawsnote.com/) 比賽期間免費開放無上限額度版本。
 
-Legal Chihuahua 是一套用來搜尋台灣判決文獻的服務，其核心由卓騰的 [CopyToaster 自然語言智慧文件搜尋助理](https://api.droidtown.co/copyToaster/) 所構成。在使用者輸入一段特定詞句後，經由獨家演算法結合 [Articut 詞性標記](https://api.droidtown.co/ArticutAPI/document/#ArticutAPI) 與 `語意計算(Semantic)`，挑選出與輸入文義 **最相關** 的幾則判決書原文，協助使用者快速的從茫茫資料海中找到想要的文件。
+Legal Chihuahua 是一套用來搜尋台灣判決文獻的服務，其核心由卓騰的 [CopyToaster 自然語言智慧文件搜尋助理](https://api.droidtown.co/copyToaster/) 所構成。在使用者輸入一段特定詞句後，經由獨家演算法結合 [Articut 詞性標記](https://api.droidtown.co/ArticutAPI/document/#ArticutAPI) 與 `語意計算(Semantic Computing)`，挑選出與輸入文義 **最相近** 的幾則判決書原文，協助使用者快速的從茫茫資料海中找到想要的文件。
 
 想吉人或是被吉了嗎？別擔心，就讓 Legal 吉娃娃來幫助你快速找到想要的判決紀錄吧！
 
@@ -62,7 +62,7 @@ url = "https://api.droidtown.co/CopyToaster/API/"
 payload = {
     "username": "legaltech@droidtown.co", # 請勿更改此欄位
     "copytoaster_key": "hZYNiEDyd5VCpP(FJS1w@UeRsgLr$QA", # 這裡替換成您想要搜尋的法院金鑰！
-    "category": "臺灣臺北地方法院" # optional, 這裡輸入您想搜尋的法院名稱
+    "category": "臺灣基隆地方法院", # optional, 這裡輸入您想搜尋的法院名稱
     "input_str": "販賣毒品並走私槍械", # 這裡輸入您想要搜尋的文句
     "count": 1 # optional, default = 15
 }
