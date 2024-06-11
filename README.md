@@ -26,12 +26,12 @@ Legal Chihuahua 是一套用來搜尋台灣判決文獻的服務，其核心由�
 > 
 > 在使用 Legal Chihuahua API 時，請在 `copytoaster_key` 欄位內指定您欲搜尋的判決書類別金鑰，以獲得最優良的搜尋結果。
 
-#### [可選]搜尋法院 (`category`)
-依現行法條規範，不同的判決類別會由各自的管轄法院進行裁決，因此在使用 Legal Chihuahua API 時，您可以指定要搜尋的法院名稱，提昇搜尋的精準度。
+#### 搜尋法院 (`category`)
+依現行法條規範，不同的判決類別會由各自的管轄法院進行裁決，因此在使用 Legal Chihuahua API 時，您需要指定要搜尋的法院名稱，以提昇搜尋的精準度。
 
-> [!TIP]
+> [!IMPORTANT]
 > 
-> 若是想搜尋所有法院，則無須填寫此欄位，或將此欄位值設為空字串即可。
+> 若是想同時搜尋所有法院，請分項依序搜尋各個法院，再將結果統整。
 
 > [!NOTE]
 >
@@ -66,7 +66,7 @@ url = "https://api.droidtown.co/CopyToaster/API/"
 payload = {
     "username": "legaltech@droidtown.co", # 請勿更改此欄位
     "copytoaster_key": "hZYNiEDyd5VCpP(FJS1w@UeRsgLr$QA", # 這裡替換成您想要搜尋的法院金鑰！
-    "category": "臺灣台北地方法院", # optional, 這裡輸入您想搜尋的法院名稱
+    "category": "臺灣台北地方法院", # 這裡輸入您想搜尋的法院名稱
     "input_str": "用LINE恐嚇取財", # 這裡輸入您想要搜尋的文句
     "count": 1 # optional, default = 15
 }
