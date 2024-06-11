@@ -66,8 +66,8 @@ url = "https://api.droidtown.co/CopyToaster/API/"
 payload = {
     "username": "legaltech@droidtown.co", # 請勿更改此欄位
     "copytoaster_key": "hZYNiEDyd5VCpP(FJS1w@UeRsgLr$QA", # 這裡替換成您想要搜尋的法院金鑰！
-    "category": "臺灣基隆地方法院", # optional, 這裡輸入您想搜尋的法院名稱
-    "input_str": "販賣毒品並走私槍械", # 這裡輸入您想要搜尋的文句
+    "category": "臺灣台北地方法院", # optional, 這裡輸入您想搜尋的法院名稱
+    "input_str": "用LINE恐嚇取財", # 這裡輸入您想要搜尋的文句
     "count": 1 # optional, default = 15
 }
 
@@ -82,10 +82,10 @@ print(post(url, json=payload).json())
   "msg": "Success!",
   "results": [
     {
-      "category": "臺灣基隆地方法院",
-      "title": "刑事判決_112,重訴,6_2023-12-01",
-      "document": "臺灣基隆地方法院>>\n臺灣基隆地方法院刑事判決...",
-      "highlight": ["上級法院", "..."]
+      "category": "臺灣臺北地方法院",
+      "title": "刑事判決_112,易,534_2023-11-16",
+      "document": "臺灣臺北地方法院>>\n臺灣臺北...(中略)...在其與丙○○(所涉恐嚇取財等罪嫌，另為不起訴處分)、乙○○3人之LINE群組內，以暱稱「Yoting su小祐」，對乙○○傳送「你是皮在癢你他媽下週給我滾出來」、「不然我他馬的一定打爆你」等加害於乙○○身體之惡害告知訊息，致乙○○心生畏懼，致生危害於其安全。...(下略)",
+      "highlight": ["上級法院", "中華民國刑法", "...(下略)"]
     }
   ]
 }
